@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package wedding;
+option go_package = "proto/gateway";
+
+message Request {
+  string name = 1;
+}
+
+message Response {
+  string message = 1;
+}

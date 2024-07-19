@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package wedding;
+option go_package = "proto/gateway";
+
+import "grpc-idl/wedding/common.proto";
+
+service HomeService {
+  rpc getMain (Request) returns (Response);
+}
